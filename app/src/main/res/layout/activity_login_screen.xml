@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="@color/white"
+    android:background="#f0f0f0">
+
+
+    <!-- Bulb Icon -->
+    <ImageView
+        android:id="@+id/nic_image"
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginBottom="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/img_nic_2" />
+
+    <!-- CNIC Input Field -->
+    <EditText
+        android:id="@+id/editTextPhone222"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/bg"
+        android:backgroundTint="#d9d9d9"
+        android:digits="0123456789-"
+        android:gravity="center"
+        android:hint="اپنا شناختی کارڈ نمبر درج کریں"
+        android:fontFamily="@font/jameelnoori"
+        android:imeOptions="actionDone"
+        android:inputType="phone"
+        android:maxLength="15"
+        android:padding="16dp"
+        android:textColorHint="#2C2B2B"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nic_image" />
+
+    <!-- Done Button -->
+    <LinearLayout
+        android:id="@+id/button"
+        android:layout_width="0dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/bg"
+        android:backgroundTint="@color/ui_green"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextPhone222">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|center_vertical"
+            android:src="@drawable/check_double_line"
+            app:tint="@color/white" />
+    </LinearLayout>
+
+    <!-- Footer with Icon and Text -->
+    <LinearLayout
+        android:layout_width="132dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/icon" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="By iTecknologi"
+            android:textAlignment="center"
+            android:textColor="@color/dark_blue"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txt_version"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Version 1.0.0"
+            android:textAlignment="center"
+            android:textColor="#A8A8A8"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
