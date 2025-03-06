@@ -32,6 +32,12 @@ class MainActivity : AppCompatActivity() {
         cameraIcons=findViewById(R.id.cameraIcons)
 
 
+
+
+
+
+
+
         doneButton.setOnClickListener { check(deviceNumber.text.toString()) }
 
 
